@@ -6,10 +6,10 @@ In this case study, I will perform many real-world tasks of a junior data analys
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 04/03/23]  
   
 SQL Queries:  
-[01. Data Combining](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
-[02. Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
-[03. Data Cleaning](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
-[04. Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
+[01. Data Combining](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Combining.sql)  
+[02. Data Exploration](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Exploaration.sql)  
+[03. Data Cleaning](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Cleaning.sql)  
+[04. Data Analysis](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Analysis.sql)  
   
 Data Visualizations: [Tableau](https://public.tableau.com/app/profile/somia.nasir/viz/bike-tripdata-casestudy/Dashboard1#1)  
 ## Background
@@ -48,10 +48,10 @@ BigQuery is used to combine the various datasets into one dataset and clean it.
 Reason:  
 A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
 ### Combining the Data
-SQL Query: [Data Combining](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
+SQL Query: [Data Combining](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Combining.sql)  
 12 csv files are uploaded as tables in the dataset '2022_tripdata'. Another table named "combined_data" is created, containing 5,667,717 rows of data for the entire year. 
 ### Data Exploration
-SQL Query: [Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
+SQL Query: [Data Exploration](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Exploaration.sql)  
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
 
 Observations:  
@@ -86,14 +86,14 @@ Observations:
 11. Columns that need to be removed are start_station_id and end_station_id as they do not add value to analysis of our current problem. Longitude and latitude location columns may not be used in analysis but can be used to visualise a map.
 
 ### Data Cleaning
-SQL Query: [Data Cleaning](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
+SQL Query: [Data Cleaning](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Cleaning.sql)  
 1. All the rows having missing values are deleted.  
 2. 3 more columns ride_length for duration of the trip, day_of_week and month are added.  
 3. Trips with duration less than a minute and longer than a day are excluded.
 4. Total 1,375,912 rows are removed in this step.
   
 ## Analyze and Share
-SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
+SQL Query: [Data Analysis](https://github.com/farazkabbo/Google-analytics-Capstone-Cyclist-analsis-project-/blob/main/Data%20Analysis.sql)  
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/somia.nasir/viz/bike-tripdata-casestudy/Dashboard1#1)  
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
